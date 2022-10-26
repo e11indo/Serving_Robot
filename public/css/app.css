@@ -1,0 +1,315 @@
+/* 랜딩페이지 인덱스 페이지 */
+.navbar{
+    --bs-bg-opacity:1;
+}
+
+.navbar.active{
+    background-color: white;
+    border-bottom: 1px solid #DDDDDD
+}
+
+
+.navbar.active .nav-link{
+    color: black;
+}
+
+.navbar.active .nav-link:hover, 
+.navbar.active .nav-link.active{
+    color: red;
+}
+
+.nav-link{
+    color:white;
+}
+
+#robot_video{
+    height: 400px;
+}
+
+.carousel-caption{
+    bottom: 30%;
+}
+
+.contact-info{
+    color: rgb(33,88,170);
+}
+.contact-sub{
+    width: 70px;
+}
+.contact-content{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contact input{
+    height: 30px;
+}
+.contact select{
+    height: 30px;
+    width: 100%;
+}
+
+
+.contact-btn{
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    border: 0px;
+    color: white;
+    background-color: #01bdb6;
+}
+
+.footer-text{
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.btn_top{
+    width: 4rem;
+    height: 4rem;
+    background: #000;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #fff;
+    z-index: 1;
+}
+.btn_top:hover{
+    color: #000;
+    background: #febf00;
+}
+
+.side_tab{
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 999;
+    margin: 0;
+}
+
+.side_tab li{
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
+}
+
+.side_tab li a {    
+    display: inline-block;
+    padding: 16px 35px 16px 10px;
+    width: 100%;
+    height: 100%;
+    letter-spacing: -0.5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.side_tab li .img{
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #2d466b;
+    border-radius: 50%;
+}
+
+.side_tab li .img img {
+    width: 30px;
+}
+
+
+
+/* 랜딩페이지 관리 View 페이지*/
+table{
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
+    border-left: 1px solid #c7c7c7;
+}
+table thead td{
+    background-color: #7388b2;
+    color: white;
+}
+table thead .no{
+    width: 25px;
+}
+table thead .name{
+    width: 100px;
+}
+table thead .phone{
+    width: 150px;
+}
+table thead .time{
+    width: 100px;
+}
+table thead .create_time{
+    width: 150px;
+}
+table tbody td{
+    border-bottom: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+}
+table tbody td a{
+    color: black;
+    text-decoration: none;
+}
+
+table tbody td a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+span .page-link{
+    background-color: red;
+}
+
+
+/* 상담 개인글 */
+.table_board_view{
+    width: 950px;
+    
+}
+
+.show.th{
+    width: 150px;
+    text-align: center;
+    background-color: #7388b2;
+    color: white;
+    font-weight: normal;
+    border: 1px solid #e6e6e6;
+    padding: 5px 0px 5px 0px;
+}
+
+.show.td{
+    width: 800px;
+    padding: 5px 0px 5px 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #e6e6e6;
+}
+
+.table_row{
+    display: flex;
+}
+
+.delete button{
+    border: 1px solid #e6e6e6; 
+}
+
+
+@media(max-width:992px){
+    .navbar{
+        background-color: white;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .navbar-nav .nav-link.active{
+        color :red;
+    }
+    .navbar-nav .nav-link{
+        color:black;
+    }
+    .navbar-nav .nav-link:hover{
+        transition: 0.2s;
+        color:red;
+    }
+}
+
+
+
+/* 모바일 반응형 Index페이지*/
+@media(max-width: 768px){
+
+    .row .col-6{
+        width:100%;
+    }
+    .side_tab li{
+        margin-bottom: 10px;
+        background-color: #fff;
+        position: relative;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
+    }
+    
+    .side_tab li a {    
+        display: inline-block;
+        padding: 8px 18px 8px 10px;
+        width: 100%;
+        height: 100%;
+        letter-spacing: -0.5px;
+        font-size: 0.6em;
+        font-weight: 600;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .side_tab li .img{
+        position: absolute;
+        top: 50%;
+        left: 55px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: #2d466b;
+        border-radius: 50%;
+    }
+    
+    .side_tab li .img img {
+        width: 15px;
+    }
+    .btn_top{
+        width: 3rem;
+        height: 3rem;
+        font-size: 13px;
+    }
+    .container{
+        max-width:650px
+    }
+
+    #robot_information_1,#robot_information_2, #robot_video {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    }
+
+    #robot_information_2{
+        flex-direction: column-reverse;
+    }
+
+    .container .row .col-6 button{
+        margin-top:10px;
+    }
+
+    #robot_video{
+        height: 800px;
+    }
+    
+    #robot_video .col-6{
+        margin-top: 20px;
+    }
+
+    #contact{
+        flex-direction: column-reverse;
+    }
+    #contact_info #contact_information{
+        margin-top: 3rem !important;
+    }
+}
